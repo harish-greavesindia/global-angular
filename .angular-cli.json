@@ -1,11 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "global-angular"
+    "name": "global-angular",
+    "ejected": true
   },
   "apps": [
     {
-      "root": "src",
+      "root": "ktwo",
       "outDir": "dist",
       "assets": [
         "assets",
@@ -19,7 +20,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -36,11 +37,11 @@
   },
   "lint": [
     {
-      "project": "src/tsconfig.app.json",
+      "project": "snippet/tsconfig.app.json",
       "exclude": "**/node_modules/**"
     },
     {
-      "project": "src/tsconfig.spec.json",
+      "project": "snippet/tsconfig.spec.json",
       "exclude": "**/node_modules/**"
     },
     {
@@ -54,7 +55,8 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
   }
 }
